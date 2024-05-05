@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { AppBar, Toolbar, Typography, Grid } from '@mui/material';
 import SearchBox from './SearchBox';
 
