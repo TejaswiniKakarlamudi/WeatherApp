@@ -1,13 +1,155 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  /* position: relative;  */
+  color: #f0f0f0;
+  }
+
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/64/16/d4/6416d4f534e7b4335de6b7f244a65399.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: blur(12px);
+  /* z-index: -1; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  width: 76vw;
+  height: 80vh;
+  margin: 10vh 10vw;
+  background-image: url("https://w0.peakpx.com/wallpaper/193/801/HD-wallpaper-night-city-building-lights-sky-stars-water.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  /* z-index: 1;  */
+  overflow: hidden;
+  border: 2px;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+  height: calc(100% - 60px);
+  
+}
+
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
+  transition: background-color 0.5s ease; /* Optional: for hover effects */
+}
+.cardicon{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  }
+/* .cardmain{
+  /* display: flex;
+  flex-direction: column; */
+  /* padding: 2rem;
+}  */
+
+.secondpart{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.weatherCard{
+  border: 4px solid rgba(0, 0, 0, 0.3);;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 3);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.6) ;
+}
+.airQuality{
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 3);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.6) ;
+}
+p {
+  margin: 1px;
+}
+
+.additionalSection{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.extra{
+  background-color: rgba(0, 0, 0, 0.6) ;  border-radius: 8px;
+  border-color: #5e3a6a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 7);
+  padding: 10px;
+  margin: 10px;
+  display: inline-block; 
+  text-align: center;
+}
+/* #210c28 */
+.footer {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  height: 60px; 
+  background-color:#210c28;
+  color: white;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* .cardmain:hover {
+  position: relative;
+}
+
+.cardmain:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 34 );
+  z-index: 1;
+}  */
+
+
+@media screen and (max-width: 850px) {
+  .extra {
+    display: none;
+  }
+  .airQuality {
+    display: none;
+  }
+  .secondpart {
+    padding: 1rem;
+    display: block;
+  } 
+  .secondpart p{
+    margin: 5px;
+  }
+
 }
