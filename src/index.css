@@ -2,7 +2,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #f0f0f0;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* position: relative;  */
   color: #f0f0f0;
   }
@@ -36,33 +36,24 @@ body::before {
   border: 2px;
   border-radius: 6px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
-  height: calc(100% - 60px);
-  
+  /* height: calc(100% - 60px); */ 
 }
-
-
 .image-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
-  transition: background-color 0.5s ease; /* Optional: for hover effects */
+  background: rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.5s ease;
 }
 .cardicon{
   display: flex;
   justify-content: center; 
   align-items: center;
   }
-/* .cardmain{
-  /* display: flex;
-  flex-direction: column; */
-  /* padding: 2rem;
-}  */
-
 .secondpart{
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -96,18 +87,19 @@ p {
   background-color: rgba(0, 0, 0, 0.6) ;  border-radius: 8px;
   border-color: #5e3a6a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 7);
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   display: inline-block; 
   text-align: center;
 }
 /* #210c28 */
 .footer {
   position: fixed; 
-  bottom: 0;
+  /* bottom: 0; */
+  margin-bottom: 0px !important;
   width: 100%;
   height: 60px; 
-  background-color:#210c28;
+  background:#210c28;
   color: white;
   padding: 0 20px;
   z-index: 1;
@@ -151,5 +143,7 @@ p {
   .secondpart p{
     margin: 5px;
   }
-
+  p{
+    margin:0;
+  }
 }

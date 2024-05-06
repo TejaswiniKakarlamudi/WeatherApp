@@ -16,7 +16,7 @@ const Home = () => {
     setLocation(location);
     setLoading(true);
     setError(null);
-
+    setData(null);
     try {
       const url = `https://api.weatherapi.com/v1/current.json?key=${token}&q=${location}&aqi=yes`;
       const response = await fetch(url);
@@ -28,7 +28,7 @@ const Home = () => {
       setData(data);
     } catch (error) {
       console.error('Error fetching data:', error);
-      setError('An error occurred while fetching data. Please try again later.');
+      setError('An error occurred while fetching data. Please try again another name');
     } finally {
       setLoading(false);
     }
@@ -40,7 +40,6 @@ const Home = () => {
       <Header location={location} onSearch={handleSearch} />
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
-      {!loading && !error && !data && <p>No results found.</p>}
       {data && <Card data={data} />}
       <Footer/>
     </>
