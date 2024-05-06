@@ -1,3 +1,49 @@
+# WeatherApp
+
+This is a WeatherApp project built with React.
+
+## Repository
+
+- **GitHub:** [TejaswiniKakarlamudi/WeatherApp](https://github.com/TejaswiniKakarlamudi/WeatherApp)
+
+## Author
+
+- **Tejaswini Kakarlamudi**
+
+## License
+
+This project is licensed under the [ISC License](LICENSE).
+
+## Issues
+
+If you encounter any issues or have suggestions for improvement, please submit them [here](https://github.com/TejaswiniKakarlamudi/WeatherApp/issues).
+
+## Homepage
+
+For more information about the project, visit the [homepage](https://github.com/TejaswiniKakarlamudi/WeatherApp#readme).
+
+
+
+
+
+if the code is not running please remove the 
+
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejaswiniKakarlamudi/WeatherApp.git"
+  },
+  "author": "Tejaswini Kakarlamudi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TejaswiniKakarlamudi/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/TejaswiniKakarlamudi/WeatherApp#readme"
+
+and try again.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
